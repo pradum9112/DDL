@@ -1,0 +1,53 @@
+
+.custom-card {
+    width: 14rem;
+    transition: transform 0.3s ease;
+    /* Add a smooth transition for the hover effect */
+    height: 18rem;
+
+}
+
+.custom-card:hover{
+  background-color: #71b7ad;
+  color: white;
+}
+
+.custom-card:hover {
+    transform: scale(1.05);
+    /* Example: Increase the scale on hover */
+    /* Add any other styles you want for the hover effect */
+}
+
+
+/* .custom-img {
+width: 14rem;
+height: 12rem;
+
+} */
+
+
+
+
+.custom-text {
+    position: relative;
+    display: inline-block;
+}
+
+
+.custom-text::before {
+    content: "";
+    position: absolute;
+    /* top: 2.5rem; */
+    bottom: -9px;
+    left: 50%;
+    width: 50%;
+    height: 2px;
+    transform: translateX(-50%);
+    background-color: #71b7ad;
+    transition: width 0.3s ease;
+   
+}
+
+.custom-text:hover::before {
+    width: 100%;
+}
